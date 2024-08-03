@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけんゲーム</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>じゃんけんゲーム</h1>
+        <input type="text" id="player-name-input" placeholder="名前を入力">
+        <button id="join-button">参加</button>
+        <div id="players-container"></div>
+        <div class="choices">
+            <button class="choice">グー</button>
+            <button class="choice">パー</button>
+            <button class="choice">チョキ</button>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
